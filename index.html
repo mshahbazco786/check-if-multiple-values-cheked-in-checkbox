@@ -14,7 +14,8 @@
       <input type="checkbox" id="bus" value="bus" />
     </form>
     <script>
-      let checkBoxBtn = document.querySelectorAll(
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let checkBoxBtn = document.querySelectorAll(
         ".PriceTable input[type='checkbox']"
       );
       checkBoxBtn.forEach(function (elem) {
@@ -26,6 +27,8 @@
           }
         });
       });
+    });
+      
     </script>
   </body>
 </html>
