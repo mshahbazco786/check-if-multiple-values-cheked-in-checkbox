@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="PriceTable">
+      <label>List1</label>
+      <input type="checkbox" id="car" value="car" />
+      <label>List2</label>
+      <input type="checkbox" id="bus" value="bus" />
+    </form>
+    <script>
+      let checkBoxBtn = document.querySelectorAll(
+        ".PriceTable input[type='checkbox']"
+      );
+      checkBoxBtn.forEach(function (elem) {
+        console.log(elem);
+        elem.addEventListener("input", function () {
+          if (elem.checked == true) {
+            let item_value = elem.value;
+            console.log("Value", item_value);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
